@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+
+            function verificar(event) {
+                let button = event.target;
+                if (button.innerHTML == '50 PAUS') {
+                    button.style.backgroundColor = 'Green';
+                    document.getElementById('feedback1').innerText = 'CORRETO'
+                } else {
+                    button.style.backgroundColor = 'red';
+                    document.getElementById('feedback1').innerText = 'ERRADO'
+                }
+            }
+
+            function resposta(event){
+                let input = event.target;
+                if(document.getElementById('entrada').value == '4')
+                {
+                    document.getElementById('feedback').innerText = 'CORRETO';
+
+                }else{
+                    document.getElementById('feedback').innerText = 'ERRADO';
+                }
+            }
+
+
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Com quantos paus se faz uma canoa?</h3>
+                <button onclick="verificar(event)">50 PAUS</button>
+                <button onclick="verificar(event)">10 PAUS</button>
+                <button onclick="verificar(event)">25 PAUS</button>
+                <button onclick="verificar(event)">100 PAUS</button>
+                <p id="feedback1"></p>
+
+                <!-- TODO: Add multiple choice question here -->
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>Qual é o resultado de 2 + 2?</h3>
+                <input id="entrada">
+                <button onclick="resposta(event)">Eviar resposta</button>
+                <p id="feedback"></p>
+                <!-- TODO: Add free response question here -->
+            </div>
+        </div>
+    </body>
+
+</html>

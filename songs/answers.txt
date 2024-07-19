@@ -1,0 +1,3 @@
+1) Caracterizo como uma pessoa que escuta de tudo
+2) Para calcular a aura do usuário, será interessante saber quantas vezes ele ouviu a musica e por quanto tempo, além disso associar essa media ao autor da musica. Outra coisa interessante seria saber o estilo de musica mais escutado para ajudar nesse calculo.
+
